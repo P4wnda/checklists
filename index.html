@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTF Checklists</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a class="mark" href="https://github.com/P4wnda" target="_blank" rel="noopener" aria-label="Open P4wnda on GitHub">
+        <img src="https://github.com/P4wnda.png" alt="P4wnda GitHub avatar">
+      </a>
+      <div>
+        <h1>CTF Checklists</h1>
+        <p id="summary">Standalone workflow loaded</p>
+      </div>
+    </div>
+    <label class="box-name">
+      <span>Machine</span>
+      <input id="machineName" autocomplete="off" placeholder="HTB / OSCP box name">
+    </label>
+    <div class="top-actions">
+      <button type="button" data-template="standalone" class="active">Standalone</button>
+      <button type="button" data-template="ad">Active Directory</button>
+      <button type="button" data-action="export">Export</button>
+      <button type="button" class="reset-run" data-action="reset">Reset</button>
+      <a class="ghost-link" href="/pentest/">Pentest</a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="progress-card">
+        <span class="progress-label">Progress</span>
+        <strong id="progressText">0 / 0</strong>
+        <div class="bar"><span id="progressBar"></span></div>
+      </div>
+      <nav id="sectionNav" aria-label="Checklist sections"></nav>
+    </aside>
+
+    <section class="content">
+      <div id="sections"></div>
+      <section class="notes-block">
+        <h2>Box Notes</h2>
+        <textarea id="boxNotes" placeholder="Credentials, paths, findings, next ideas..."></textarea>
+      </section>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
