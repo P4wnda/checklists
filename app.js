@@ -1,5 +1,5 @@
 (() => {
-  const pentest = (q) => `/pentest/?q=${encodeURIComponent(q)}`;
+  const pentest = (q) => `/pentest/?v=20260516&q=${encodeURIComponent(q)}`;
   const templates = {
     standalone: {
       label: 'Standalone',
