@@ -16,6 +16,13 @@ https://p4wnda.github.io/checklists/
 - Machine name, notes, reset, and Markdown export
 - Direct links into the pentest cheatsheet using `/pentest/?q=...`
 
+## Related Tools
+
+- [Project Hub](https://p4wnda.github.io/) - links to all p4wnda GitHub Pages projects.
+- [Blog](https://p4wnda.github.io/blog/) - writeups, notes, and lab documentation.
+- [Pentest Cheatsheet](https://p4wnda.github.io/pentest/) - command reference linked from checklist tasks.
+- [Reporting Tool](https://p4wnda.github.io/reporting-tool/) - vulnerability finding editor that imports Pentest Cheatsheet run JSON.
+
 ## Deployment
 
 This repository is intended to be served by GitHub Pages from:
